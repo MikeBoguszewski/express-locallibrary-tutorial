@@ -1,0 +1,5 @@
+MongoDB Atlas 
+Username: admin
+Password: vwsGHwMo13GyeilG
+
+mongodb+srv://admin:vwsGHwMo13GyeilG@cluster0.rhlzms2.mongodb.net/local_library?retryWrites=true&w=majority
