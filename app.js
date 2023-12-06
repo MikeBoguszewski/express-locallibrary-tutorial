@@ -13,6 +13,14 @@ const helmet = require('helmet');
 
 var app = express();
 
+
+// Deployment 
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
+});
+
 const RateLimit = require('express-rate-limit');
 const limiter = RateLimit({
   windowMs: 1 * 60 * 1000,
@@ -72,5 +80,6 @@ main().catch((err) => console.log(err));
 async function main() {
   await mongoose.connect(mongoDB);
 }
+
 
 module.exports = app;
